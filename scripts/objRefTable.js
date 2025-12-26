@@ -41,7 +41,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Touch.Cnds.OnDoubleTapGesture,
 		C3.Behaviors.Platform.Acts.SimulateControl,
 		C3.Plugins.Touch.Cnds.IsInTouch,
-		C3.Behaviors.Platform.Acts.SetVectorY
+		C3.Behaviors.Platform.Acts.SetVectorY,
+		C3.Behaviors.Platform.Acts.SetVectorX
 	];
 };
 self.C3_JsPropNameTable = [
