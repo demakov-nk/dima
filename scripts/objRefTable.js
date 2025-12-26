@@ -34,7 +34,14 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
 		C3.Plugins.System.Acts.RestartLayout,
-		C3.Plugins.System.Acts.ResetGlobals
+		C3.Plugins.System.Acts.ResetGlobals,
+		C3.Plugins.Sprite.Acts.SetX,
+		C3.Plugins.Sprite.Exps.X,
+		C3.Plugins.Sprite.Exps.Width,
+		C3.Plugins.Touch.Cnds.OnDoubleTapGesture,
+		C3.Behaviors.Platform.Acts.SimulateControl,
+		C3.Plugins.Touch.Cnds.IsInTouch,
+		C3.Behaviors.Platform.Acts.SetVectorY
 	];
 };
 self.C3_JsPropNameTable = [
@@ -59,6 +66,8 @@ self.C3_JsPropNameTable = [
 	{ОбщийМонстр: 0},
 	{Фон2: 0},
 	{Валюта: 0},
+	{правый: 0},
+	{левый: 0},
 	{о4ки: 0},
 	{слур: 0},
 	{хп: 0}
@@ -80,5 +89,7 @@ self.InstanceType = {
 	Дым: class extends self.ISpriteInstance {},
 	ОбщийМонстр: class extends self.ISpriteInstance {},
 	Фон2: class extends self.ITiledBackgroundInstance {},
-	Валюта: class extends self.ISpriteInstance {}
+	Валюта: class extends self.ISpriteInstance {},
+	правый: class extends self.ISpriteInstance {},
+	левый: class extends self.ISpriteInstance {}
 }
